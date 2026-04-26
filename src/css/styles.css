@@ -101,16 +101,7 @@ button[data-start]:disabled {
   color: #2e2f42;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 360px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
+
 
 .form label {
   display: flex;
@@ -150,4 +141,29 @@ fieldset legend {
 
 .form button:hover {
   background-color: #6c8cff;
+}
+
+/* Додай або онови ці властивості */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%; /* Форма розтягнеться на ширину контейнера */
+  max-width: 360px;
+  border: none; /* Прибираємо рамку, бо картка вже має тінь */
+  padding: 0;   /* Прибираємо внутрішні відступи, бо вони є у контейнера */
+}
+
+/* Групуємо радіокнопки в рядок */
+.radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.radio-group label {
+  flex-direction: row; /* Текст і радіокнопка в один рядок */
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
